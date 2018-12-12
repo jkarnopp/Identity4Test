@@ -3,11 +3,11 @@ using System.Collections.Generic;
 using System.Diagnostics;
 using System.Linq;
 using System.Threading.Tasks;
-using Microsoft.AspNetCore.Mvc;
-using IdentityTest.Models;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using MvcClientTest.Models;
 
-namespace IdentityTest.Controllers
+namespace MvcClientTest.Controllers
 {
     public class HomeController : Controller
     {
@@ -16,6 +16,7 @@ namespace IdentityTest.Controllers
             return View();
         }
 
+        [Authorize]
         public IActionResult About()
         {
             ViewData["Message"] = "Your application description page.";
