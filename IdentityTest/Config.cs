@@ -78,7 +78,8 @@ namespace IdentityTest
                         IdentityServerConstants.StandardScopes.Profile,
                         "api1"
                     },
-                    AllowOfflineAccess = true
+                    AllowOfflineAccess = true,
+                    AllowAccessTokensViaBrowser = true
                 }
             };
         }
